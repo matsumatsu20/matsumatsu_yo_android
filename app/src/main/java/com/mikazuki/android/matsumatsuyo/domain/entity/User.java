@@ -5,57 +5,59 @@ package com.mikazuki.android.matsumatsuyo.domain.entity;
  */
 public class User {
 
-    private int Id;
-    private String Name;
-    private String Password;
-    private String Token;
-    private String Gcm_id;
-
-    public User(int id, String name, String password, String token, String gcm_id) {
-        this.Id = id;
-        this.Name = name;
-        this.Password = password;
-        this.Token = token;
-        this.Gcm_id = gcm_id;
-    }
-
-    public int getId() {
-        return Id;
-    }
-
-    public void setId(int id) {
-        Id = id;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public String getPassword() {
-        return Password;
-    }
-
-    public void setPassword(String password) {
-        Password = password;
-    }
-
-    public String getToken() {
-        return Token;
-    }
-
     public void setToken(String token) {
-        Token = token;
+        this.token = token;
     }
 
     public String getGcm_id() {
-        return Gcm_id;
+        return gcm_id;
     }
 
     public void setGcm_id(String gcm_id) {
-        Gcm_id = gcm_id;
+        this.gcm_id = gcm_id;
     }
+
+    private int id;
+    private String name;
+    private String password;
+    private String token;
+    private String gcm_id;
+
+    public User(int id, String name, String password, String token, String gcm_id) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+        this.token = token;
+        this.gcm_id = gcm_id;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
 }
